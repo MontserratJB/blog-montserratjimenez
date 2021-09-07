@@ -1,91 +1,53 @@
 ---
 authors:
 - admin
-- 吳恩達
 categories:
-- Demo
-- 教程
-date: "2020-12-13T00:00:00Z"
+- SIG
+date: "2021-09-07T00:00:00Z"
 draft: false
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
+  caption: 'Image credit: [**Basesdedatos**](https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.krowdy.com%2Ftodo-para-tener-base-de-candidatos-perfecta&psig=AOvVaw279cjVDPVQGIcQo_bOkPdM&ust=1631142109011000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDN3v_77fICFQAAAAAdAAAAABAD)'
   focal_point: ""
   placement: 2
   preview_only: false
-lastmod: "2020-12-13T00:00:00Z"
+lastmod: "2021-09-07T00:00:00Z"
 projects: []
-subtitle: "Welcome \U0001F44B We know that first impressions are important, so we've
-  populated your new site with some initial content to help you get familiar with
-  everything in no time."
-summary: "Welcome \U0001F44B We know that first impressions are important, so we've
-  populated your new site with some initial content to help you get familiar with
-  everything in no time."
+subtitle: "Comparación de extensión PostGIS y Software ArcSDE."
+summary: "Comparación de extensión PostGIS y Software ArcSDE."
 tags:
 - Academic
-- 开源
-title: Welcome to Wowchemy, the website builder for Hugo
+title: Comparación de extensión PostGIS y Software ArcSDE
 ---
 
-## Overview
+## Introducción
 
-1. The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site
-2. The template can be modified and customised to suit your needs. It's a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a **no-code solution (write in Markdown and customize with YAML parameters)** and having **flexibility to later add even deeper personalization with HTML and CSS**
-3. You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more
-
+El almacenamiento, procesamiento y visualización de datos geoespaciales ha generado la necesidad de estructuras de bases de datos que permitan el manejo de esta información en un mismo repositorio, los modelos de bases de datos heterogéneos pueden presentar dificultades en el modelaje, uso e integración de los datos. Víquez, A. & Hernández, I. (2020). 
+Algunas de las soluciones que se usan con más frecuencia en la actualidad para trabajar con datos geoespaciales son la extensión Postgis y el software producido por ESRI ArcSDE. 
 
 
-## Get Started
 
-- 👉 [**Create a new site**](https://wowchemy.com/templates/)
-- 📚 [**Personalize your site**](https://wowchemy.com/docs/)
-- 💬 [Chat with the **Wowchemy community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=(%23MadeWithWowchemy%20OR%20%23MadeWithAcademic)&src=typed_query)
-- 💡 [Request a **feature** or report a **bug** for _Wowchemy_](https://github.com/wowchemy/wowchemy-hugo-modules/issues)
-- ⬆️ **Updating Wowchemy?** View the [Update Guide](https://wowchemy.com/docs/guide/update/) and [Release Notes](https://wowchemy.com/updates/)
+## Conceptos Básicos
 
-## Crowd-funded open-source software
+- 👉 **PostGis:**
+ 	“PostGIS es una extensión del sistema de base de datos PostgreSQL, que permite el almacenamiento y la manipulación de objetos geométricos vectoriales en bases de datos; incluyendo, además, el Sistema de Referencia Espacial; lo que la convierte en una base de datos espacial para su utilización en Sistema de Información Geográfica”. Duke-Williams, (2006).
+- 👉 **PostgreSQL:**
+ “PostgreSQL es un potente sistema de base de datos relacional de objetos de código abierto con más de 30 años de desarrollo activo que le ha ganado una sólida reputación por su fiabilidad, solidez de funciones y rendimiento.”  PostgreSQL (Accesado en: 2021).
+- 👉 **ArcSDE:**
+“Permite administrar datos geoespaciales dentro de la base de datos relacional, la tecnología admite la lectura y la escritura de varios estándares, entre ellos los estándares de OGC para entidades simples y estándares ISO para tipo espaciales” Ochoa (2015).
+- 👉 **Datos espaciales:**
+“Los datos espaciales representan digitalmente, elementos o fenómenos que suceden en la faz de la tierra o cerca de la misma. Dichos elementos se pueden modelizar mediante modelos de datos Vectoriales y modelos de datos Ráster; los datos vectoriales representan formas geométricas como puntos, líneas o polígonos (por ejemplo, una casa, una carretera, un bosque, respectivamente); y los datos Ráster se caracterizan por la presencia de celdas o cuadrículas, más conocidas como píxeles, en donde cada píxel muestra una cualidad espacial (color, altitud, etc.)”. Botella, Camps, & Muñoz (1989).
+- 👉 **Base de datos espacial:**
+“Una Base de Datos Espacial permite describir los objetos espaciales que la forman a través de tres características básicas: atributos, localización y topología. Los atributos representan características de los objetos que nos permiten saber qué es lo que son. La localización, representada por la geometría del objeto y su ubicación espacial de acuerdo a un sistema de referencia, permite saber dónde está el objeto y qué espacio ocupa”. Gutiérrez (2006).
 
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
 
-### [❤️ Click here to become a sponsor and help support Wowchemy's future ❤️](https://wowchemy.com/plans/)
+## Comparación
 
-As a token of appreciation for sponsoring, you can **unlock [these](https://wowchemy.com/plans/) awesome rewards and extra features 🦄✨**
+Dentro del trabajo que se realiza para la creación de una base de datos espacial se considera el modelamiento de la base de datos de acuerdo a los requerimientos del sistema.
+Al trabajar con el modelo físico se debe integrar a la base de datos nueva todas las condiciones definidas previamente como tipos de datos y restricciones en columnas, tablas y relaciones entre tablas.
+Esta integración del modelo físico a la base de datos puede variar al trabajar con una extensión PostGIS y con el Software ArcSDE.
+Según Víquez, A. & Hernández, I. (2020), al trabajar con ArcSDE, se presentan deficiencias al transformar el modelo físico porque asignan automáticamente la llave primaria y las restricciones a valores codificados no son considerados por el motor de base de datos.
+Al trabajar con la extensión PostGIS e incorporar un modelo físico generado desde PgModeler se mantienen llaves primarias establecidas en el modelo físico.
 
-## Ecosystem
 
-* **[Hugo Academic CLI](https://github.com/wowchemy/hugo-academic-cli):** Automatically import publications from BibTeX
 
-## Inspiration
-
-[Check out the latest **demo**](https://academic-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the **showcase**](https://wowchemy.com/user-stories/) of personal, project, and business sites.
-
-## Features
-
-- **Page builder** - Create *anything* with [**widgets**](https://wowchemy.com/docs/page-builder/) and [**elements**](https://wowchemy.com/docs/writing-markdown-latex/)
-- **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
-- **Create content** in [**Markdown**](https://wowchemy.com/docs/writing-markdown-latex/), [**Jupyter**](https://wowchemy.com/docs/import/jupyter/), or [**RStudio**](https://wowchemy.com/docs/install-locally/)
-- **Plugin System** - Fully customizable [**color** and **font themes**](https://wowchemy.com/docs/customization/)
-- **Display Code and Math** - Code highlighting and [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) supported
-- **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
-- **Beautiful Site** - Simple and refreshing one page design
-- **Industry-Leading SEO** - Help get your website found on search engines and social media
-- **Media Galleries** - Display your images and videos with captions in a customizable gallery
-- **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
-- **Multi-language** - 34+ language packs including English, 中文, and Português
-- **Multi-user** - Each author gets their own profile page
-- **Privacy Pack** - Assists with GDPR
-- **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
-- **One-Click Deployment** - No servers. No databases. Only files.
-
-## Themes
-
-Wowchemy and its templates come with **automatic day (light) and night (dark) mode** built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the [Demo](https://academic-demo.netlify.com/) to see it in action! Day/night mode can also be disabled by the site admin in `params.toml`.
-
-[Choose a stunning **theme** and **font**](https://wowchemy.com/docs/customization) for your site. Themes are fully customizable.
-
-## License
-
-Copyright 2016-present [George Cushen](https://georgecushen.com).
-
-Released under the [MIT](https://github.com/wowchemy/wowchemy-hugo-modules/blob/master/LICENSE.md) license.
