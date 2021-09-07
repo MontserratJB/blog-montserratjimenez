@@ -37,10 +37,8 @@ social:
   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://github.com/MontserratJB
+
 superuser: true
 title: Montserrat Jiménez
 ---
@@ -48,3 +46,5 @@ title: Montserrat Jiménez
 Montserrat Jiménez es ingeniera Topógrafa en el proyecto de integración de la gestión tributaria y Sistemas de Información Geográfica en la Municipalidad de Montes de Oca.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+
+
