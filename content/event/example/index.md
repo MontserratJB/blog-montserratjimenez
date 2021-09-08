@@ -4,11 +4,11 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere 
   faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien
   eu, pulvinar tempor diam.
 address:
-  city: Stanford
-  country: United States
-  postcode: "94305"
-  region: CA
-  street: 450 Serra Mall
+  city: San José
+  country: Costa Rica
+  postcode: "11801"
+  region: Montes de Oca
+  street: 26A San Pedro
 all_day: false
 authors: []
 date: "2030-06-01T13:00:00Z"
@@ -23,7 +23,7 @@ links:
 - icon: twitter
   icon_pack: fab
   name: Follow
-  url: https://twitter.com/georgecushen
+  url: https://twitter.com/Snoopy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
 location: Wowchemy HQ
 projects:
 - internal-project

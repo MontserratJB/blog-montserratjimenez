@@ -10,9 +10,8 @@ links:
   name: Follow
   url: https://twitter.com/georgecushen
 slides: example
-summary: An example of using the in-built project page.
+summary: SIG en la administración de servicios Municipales.
 tags:
-- Deep Learning
 title: Internal Project
 url_code: ""
 url_pdf: ""
@@ -20,9 +19,9 @@ url_slides: ""
 url_video: ""
 ---
 
-Generación de Insumos y Aplicaciones SIG en la Gestión Municipal de Montes de Oca
+### Generación de Insumos y Aplicaciones SIG en la Gestión Municipal de Montes de Oca
 
-SIG en la administración de servicios Municipales: Mapa de Tarifas de Basura Residencial para Montes de Oca: mapas que contienen información de la zonificación de tarifas asignadas para el cobro del servicio de recolección de Basura Residencial.
+SIG en la administración de servicios Municipales mapas de Tarifas de Basura Residencial para Montes de Oca: mapas que contienen información de la zonificación de tarifas asignadas para el cobro del servicio de recolección de Basura Residencial.
 
 Administración de bienes inmuebles municipales.
 
